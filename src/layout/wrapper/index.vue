@@ -9,7 +9,7 @@
                             <img src="../../assets/images/logo-icon.png" class="logo-icon" alt="logo icon">
                         </div>
                         <div class="">
-                            <h4 class="logo-text">Rocker</h4>
+                            <h4 class="logo-text">Nhà thuốc Genz</h4>
                         </div>
                     </div>
                     <div class="mobile-toggle-menu"><i class='bx bx-menu'></i></div>
@@ -28,51 +28,18 @@
                                 <a class="nav-link" href="#"> <i class='bx bx-search'></i>
                                 </a>
                             </li>
-                            <li class="nav-item dropdown dropdown-large">
-                                <a class="nav-link dropdown-toggle dropdown-toggle-nocaret" href="#" role="button"
-                                    data-bs-toggle="dropdown" aria-expanded="false"> <i class='bx bx-category'></i>
-                                </a>
-                                <div class="dropdown-menu dropdown-menu-end">
-                                    <div class="row row-cols-3 g-3 p-3">
-                                        <div class="col text-center">
-                                            <div class="app-box mx-auto bg-gradient-cosmic text-white"><i
-                                                    class='bx bx-group'></i>
-                                            </div>
-                                            <div class="app-title">Teams</div>
-                                        </div>
-                                        <div class="col text-center">
-                                            <div class="app-box mx-auto bg-gradient-burning text-white"><i
-                                                    class='bx bx-atom'></i>
-                                            </div>
-                                            <div class="app-title">Projects</div>
-                                        </div>
-                                        <div class="col text-center">
-                                            <div class="app-box mx-auto bg-gradient-lush text-white"><i
-                                                    class='bx bx-shield'></i>
-                                            </div>
-                                            <div class="app-title">Tasks</div>
-                                        </div>
-                                        <div class="col text-center">
-                                            <div class="app-box mx-auto bg-gradient-kyoto text-dark"><i
-                                                    class='bx bx-notification'></i>
-                                            </div>
-                                            <div class="app-title">Feeds</div>
-                                        </div>
-                                        <div class="col text-center">
-                                            <div class="app-box mx-auto bg-gradient-blues text-dark"><i
-                                                    class='bx bx-file'></i>
-                                            </div>
-                                            <div class="app-title">Files</div>
-                                        </div>
-                                        <div class="col text-center">
-                                            <div class="app-box mx-auto bg-gradient-moonlit text-white"><i
-                                                    class='bx bx-filter-alt'></i>
-                                            </div>
-                                            <div class="app-title">Alerts</div>
-                                        </div>
-                                    </div>
-                                </div>
+                            <!-- đăng nhập và đăng ký -->
+                              <li class="nav-item">
+                                <router-link to="/khach-hang/dang-nhap" class="nav-link" style="font-size: 14px; padding: 5px 10px;">
+                                    <i class="bx bx-log-in-circle"></i> Đăng nhập
+                                </router-link>
                             </li>
+                            <li class="nav-item">
+                                <router-link to="/khach-hang/dang-nhap" class="nav-link" style="font-size: 14px; padding: 5px 10px;">
+                                    <i class="bx bx-log-in-circle"></i> Đăng ký
+                                </router-link>
+                            </li>
+                            
                             <li class="nav-item dropdown dropdown-large">
                                 <a class="nav-link dropdown-toggle dropdown-toggle-nocaret position-relative" href="#"
                                     role="button" data-bs-toggle="dropdown" aria-expanded="false"> <span
@@ -437,14 +404,21 @@
             <nav class="navbar navbar-expand-xl w-100">
                 <ul class="navbar-nav justify-content-start flex-grow-1 gap-1">
                     <li class="nav-item dropdown">
-                        <a href="javascript:;" class="nav-link dropdown-toggle dropdown-toggle-nocaret"
-                            data-bs-toggle="dropdown">
-                            <div class="parent-icon"><i class='bx bx-home-circle'></i>
-                            </div>
-                            <div class="menu-title">Dashboard</div>
-                        </a>
+                        <router-link to="/">
+                            <a class="nav-link" href="/">
+                                <div class="parent-icon"><i class='bx bx-home-circle'></i>
+                                </div>
+                                <div class="menu-title">Trang chủ</div>
+                            </a>
+                        </router-link>
                     </li>
-                  
+                    <li class="nav-item dropdown">
+                        <router-link to="/admin/thuoc">
+                            <a class="nav-link" href="/admin/thuoc">
+                                <div class="menu-title">Thuốc</div>
+                            </a>
+                        </router-link>
+                    </li>
                 </ul>
             </nav>
         </div>
