@@ -1,5 +1,5 @@
 <template>
-    test
+    đây là quản lý khách hàng
 </template>
 <script>
 export default {

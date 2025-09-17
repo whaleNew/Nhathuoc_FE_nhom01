@@ -5,9 +5,10 @@ const routes = [
         path : '/',
         component: ()=>import('../components/homepage/index.vue')
     },
-    {
-        path : '/admin/danhmuc',
-        component: ()=>import('../components/admin/danhmuc/index.vue')
+   
+     {
+        path : '/admin/dang-ky',
+        component: ()=>import('../components/admin/dang-ky/index.vue')
     },
 ]
 

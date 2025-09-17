@@ -1,5 +1,5 @@
 <template>
-    
+    đây là đăng ký
 </template>
 <script>
 export default {
