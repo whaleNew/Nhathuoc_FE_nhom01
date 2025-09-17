@@ -2,25 +2,27 @@ import { createRouter, createWebHistory } from "vue-router"; // cài vue-router:
 
 const routes = [
     {
-        path : '/',
+        path : '/homepage',
         component: ()=>import('../components/homepage/index.vue')
     },
    
     {
         path : '/admin/dang-ky',
-        component: ()=>import('../components/admin/dang-ky/index.vue')
+        component: ()=>import('../components/admin/dang-ky/index.vue'),
+        meta : {layout : 'blank'}
     },
     {
         path : '/admin/dang-nhap',
-        component: ()=>import('../components/admin/dang-nhap/index.vue')
+        component: ()=>import('../components/admin/dang-nhap/index.vue'),
+        meta : {layout: 'blank'}
     },
     {
-        path : '/admin/quan-ly-khach-hang',
-        component: ()=>import('../components/admin/quan-ly-khach-hang/index.vue')
+        path : '/admin/khach-hang',
+        component: ()=>import('../components/admin/quan-ly-khach-hang/index.vue'),
     },
     {
-        path : '/admin/quan-ly-nhan-vien',
-        component: ()=>import('../components/admin/quan-ly-nhan-vien/index.vue')
+        path : '/admin/cart',
+        component: ()=>import('../components/admin/cart/index.vue'),
     },
     {
         path : '/admin/thuoc',
