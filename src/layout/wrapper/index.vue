@@ -9,7 +9,7 @@
                             <img src="../../assets/images/logo-icon.png" class="logo-icon" alt="logo icon">
                         </div>
                         <div class="">
-                            <h4 class="logo-text">Nhà thuốc Genz</h4>
+                            <h4 class="logo-text">Nhà thuốc Online</h4>
                         </div>
                     </div>
                     <div class="mobile-toggle-menu"><i class='bx bx-menu'></i></div>
@@ -92,26 +92,15 @@
                             </div>
                         </a>
                         <ul class="dropdown-menu dropdown-menu-end">
-                            <li><a class="dropdown-item" href="javascript:;"><i
-                                        class="bx bx-user"></i><span>Profile</span></a>
-                            </li>
-                            <li><a class="dropdown-item" href="javascript:;"><i
-                                        class="bx bx-cog"></i><span>Settings</span></a>
-                            </li>
-                            <li><a class="dropdown-item" href="javascript:;"><i
-                                        class='bx bx-home-circle'></i><span>Dashboard</span></a>
-                            </li>
-                            <li><a class="dropdown-item" href="javascript:;"><i
-                                        class='bx bx-dollar-circle'></i><span>Earnings</span></a>
-                            </li>
-                            <li><a class="dropdown-item" href="javascript:;"><i
-                                        class='bx bx-download'></i><span>Downloads</span></a>
-                            </li>
                             <li>
-                                <div class="dropdown-divider mb-0"></div>
+                                <router-link to="/admin/profile" class="dropdown-item">
+                                    <i class="bx bx-user"></i><span> Profile</span>
+                                </router-link>
                             </li>
-                            <li><a class="dropdown-item" href="javascript:;"><i
-                                        class='bx bx-log-out-circle'></i><span>Logout</span></a>
+                            
+                            <li>
+                                <a class="dropdown-item" href="javascript:;"><i
+                                   class='bx bx-log-out-circle'></i><span>Logout</span></a>
                             </li>
                         </ul>
                     </div>
@@ -159,6 +148,120 @@
                             </li>
                             <li> <a class="dropdown-item" href="/thuoc/thuoc-khac">
                                     Thuốc khác
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <router-link to="/benh">
+                            <a class="nav-link" href="/benh">
+                                <div class="parent-icon">
+                                </div>
+                                <div class="menu-title">Tra cứu bệnh</div>
+                            </a>
+                        </router-link>
+                        <ul class="dropdown-menu">
+                            <li> <a class="dropdown-item" href="/benh/benh-cum">
+                                    Cảm cúm
+                                </a>
+                            </li>
+                            <li> <a class="dropdown-item" href="/benh/benh-hen-xuyen">
+                                    Hen xuyễn
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <router-link to="/thuc-pham-chuc-nang">
+                            <a class="nav-link" href="/thuc-pham-chuc-nang">
+                                <div class="parent-icon">
+                                </div>
+                                <div class="menu-title">Thực phẩm chức năng</div>
+                            </a>
+                        </router-link>
+                        <ul class="dropdown-menu">
+                            <li> <a class="dropdown-item" href="/thuc-pham-chuc-nang/nhom-ho-hap">
+                                    Nhóm hô hấp
+                                </a>
+                            </li>
+                            <li> <a class="dropdown-item" href="/thuc-pham-chuc-nang/co-xuong-khop">
+                                    Cơ xương khớp
+                                </a>
+                            </li>
+                            <li> <a class="dropdown-item" href="/thuc-pham-chuc-nang/cham-soc-sac-dep">
+                                    Chăm sóc sắc đẹp
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <router-link to="/me-va-be">
+                            <a class="nav-link" href="/me-va-be">
+                                <div class="menu-title">Mẹ và bé</div>
+                            </a>
+                        </router-link>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a class="dropdown-item" href="/me-va-be/cham-soc-em-be">
+                                    Chăm sóc em bé
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="/me-va-be/san-pham-danh-cho-me">
+                                   Sản phẩm dành cho mẹ
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <router-link to="/cham-soc-ca-nhan">
+                            <a class="nav-link" href="/cham-soc-ca-nhan">
+                                <div class="menu-title">Chăm sóc cá nhân</div>
+                            </a>
+                        </router-link>
+                        <ul class="dropdown-menu">
+                            <li> <a class="dropdown-item" href="/cham-soc-ca-nhan/cham-soc-co-the">
+                                    Chăm sóc cơ thể
+                                </a>
+                            </li>
+                            <li> <a class="dropdown-item" href="/cham-soc-ca-nhan/san-pham-khu-mui">
+                                    Khử mùi
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <router-link to="/cham-soc-sac-dep">
+                            <a class="nav-link" href="/cham-soc-sac-dep">
+                                <div class="menu-title">Chăm sóc sắc đẹp</div>
+                            </a>
+                        </router-link>
+                        <ul class="dropdown-menu">
+                            <li> <a class="dropdown-item" href="/cham-soc-sac-dep/cham-soc-mat">
+                                    Chăm sóc mặt
+                                </a>
+                            </li>
+                            <li> <a class="dropdown-item" href="/cham-soc-sac-dep/duoc-my-pham">
+                                    Dược mỹ phẩm
+                                </a>
+                            </li>
+
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <router-link to="/thiet-bi-y-te">
+                            <a class="nav-link" href="/thiet-bi-y-te">
+                                <div class="menu-title">Thiết bị y tế</div>
+                            </a>
+                        </router-link>
+                        <ul class="dropdown-menu">
+                            <li> <a class="dropdown-item" href="/thiet-bi-y-te/may-do-duong-huyet">
+                                    Máy đo đường huyết
+                                </a>
+                            </li>
+                            <li> <a class="dropdown-item" href="/thiet-bi-y-te/nhiet-ke">
+                                    Nhiệt kế
                                 </a>
                             </li>
 

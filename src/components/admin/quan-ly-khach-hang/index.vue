@@ -235,7 +235,10 @@ export default {
             del_khach_hang: {}
         };
     },
-    
+    mounted() {
+        this.loadData();
+        this.$toast.success(`Hey! I'm here`);
+    },
     methods: {
         loadData() {
             axios
@@ -314,5 +317,4 @@ export default {
     }
 };
 </script>
-
 <style></style>

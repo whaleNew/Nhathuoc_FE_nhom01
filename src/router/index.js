@@ -28,6 +28,14 @@ const routes = [
         path : '/admin/thuoc',
         component: ()=>import('../components/admin/thuoc/index.vue')
     },
+    {
+        path : '/admin/profile',
+        component: ()=>import('../components/admin/profile/index.vue')
+    },
+    {
+        path : '/admin/nhan-vien',
+        component: ()=>import('../components/admin/nhan-vien/index.vue')
+    },
 ]
 
 const router = createRouter({
