@@ -3,7 +3,7 @@
         <div class="col-lg-12">
             <div class="card">
                 <div class="card-header d-flex justify-content-between align-items-center">
-                    <h4 class="mt-2">Danh Sách Khách Hàng</h4>
+                    <h4 class="mt-2">Danh Sách Nhân Viên</h4>
                     <div>
                         <button class="btn btn-primary me-1" @click="Object.assign(create_khach_hang, value)"
                             data-bs-toggle="modal" data-bs-target="#themmoiKhachhangModal">Thêm Mới</button>
@@ -14,7 +14,7 @@
                         <thead>
                             <tr class="text-center align-middle text-nowrap text-light bg-primary">
                                 <th>#</th>
-                                <th>Mã Khách Hàng</th>
+                                <th>Mã Nhân Viên</th>
                                 <th>Họ Và Tên</th>
                                 <th>Email</th>
                                 <th>Mật Khẩu</th>
@@ -65,12 +65,12 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Thêm Mới Khách Hàng</h5>
+                    <h5 class="modal-title" id="exampleModalLabel">Thêm Mới Nhân Viên</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                     <div class="col-md-12 mb-2">
-                        <label>Mã Khách Hàng</label>
+                        <label>Mã Nhân Viên</label>
                         <input type="text" class="form-control" v-model="create_khach_hang.ma_khach_hang">
                     </div>
                     <div class="col-md-12 mb-2">
@@ -122,12 +122,12 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Cập Nhật Khách Hàng</h5>
+                    <h5 class="modal-title" id="exampleModalLabel">Cập Nhật Nhân Viên</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                     <div class="col-md-12 mb-2">
-                        <label>Mã Khách Hàng</label>
+                        <label>Mã Nhân Viên</label>
                         <input type="text" class="form-control" v-model="update_khach_hang.ma_khach_hang">
                     </div>
                     <div class="col-md-12 mb-2">
@@ -179,7 +179,7 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Xóa Khách Hàng</h5>
+                    <h5 class="modal-title" id="exampleModalLabel">Xóa Nhân Viên</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
